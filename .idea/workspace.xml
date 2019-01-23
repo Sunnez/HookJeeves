@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="41776f9a-637c-44c1-84f4-caa5846764b6" name="Default" comment="" />
+    <list default="true" id="41776f9a-637c-44c1-84f4-caa5846764b6" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/HJ.py" beforeDir="false" afterPath="$PROJECT_DIR$/HJ.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,17 +17,18 @@
     <SUITE FILE_PATH="coverage/hookepy$hj_new.coverage" NAME="hj_new Coverage Results" MODIFIED="1548030311365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hookepy$tom178.coverage" NAME="tom178 Coverage Results" MODIFIED="1548259484796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hookepy$main.coverage" NAME="main Coverage Results" MODIFIED="1548281144894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HookJeeves$main.coverage" NAME="main Coverage Results" MODIFIED="1548283978159" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="HJ.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HJ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="371">
-              <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+            <state relative-caret-position="748">
+              <caret line="124" column="12" lean-forward="true" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
               <folding>
                 <element signature="e#0#24#0" expanded="true" />
-                <marker date="1548281144844" expanded="true" signature="1279:1361" ph="..." />
+                <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
               </folding>
             </state>
           </provider>
@@ -34,8 +37,8 @@
       <file leaf-file-name="tom178.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/tom178.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2489">
-              <caret line="306" column="9" lean-forward="true" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
+            <state relative-caret-position="264">
+              <caret line="293" selection-start-line="293" selection-end-line="293" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -58,6 +61,9 @@
       <find>best_nearby</find>
       <find>xbefore</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -85,11 +91,13 @@
     <option name="width" value="960" />
     <option name="height" value="1040" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -101,7 +109,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -261,18 +268,17 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.3535032" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32908705" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.7447034" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17395833" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info active="true" anchor="right" id="SciView" order="3" visible="true" weight="0.3296875" />
+      <window_info anchor="right" id="SciView" order="3" visible="true" weight="0.3296875" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Concurrent Activities Diagram" weight="0.32908705" />
-      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39808917" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -280,6 +286,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32908705" />
+      <window_info anchor="bottom" id="Concurrent Activities Diagram" order="8" weight="0.32908705" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,17 +297,42 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="13" />
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tom178.py</url>
+          <line>293</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="15" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/HJ.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1298">
+          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+            <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tom178.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6710">
+          <caret line="306" column="9" lean-forward="true" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/unused/hook.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1496">
           <caret line="71" column="15" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="15" />
-          <folding>
-            <element signature="e#176#207#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -308,9 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="616">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#356#370#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -320,7 +349,7 @@
           <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548281144844" expanded="true" signature="1279:1361" ph="..." />
+            <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
           </folding>
         </state>
       </provider>
@@ -329,9 +358,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="e#176#207#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -341,7 +367,7 @@
           <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548281144844" expanded="true" signature="1279:1361" ph="..." />
+            <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
           </folding>
         </state>
       </provider>
@@ -367,9 +393,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2178">
           <caret line="101" column="14" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="14" />
-          <folding>
-            <element signature="e#176#207#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -396,7 +419,7 @@
           <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548281144844" expanded="true" signature="1279:1361" ph="..." />
+            <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
           </folding>
         </state>
       </provider>
@@ -405,9 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2178">
           <caret line="101" column="14" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="14" />
-          <folding>
-            <element signature="e#176#207#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -417,7 +437,7 @@
           <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548281144844" expanded="true" signature="1279:1361" ph="..." />
+            <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
           </folding>
         </state>
       </provider>
@@ -443,9 +463,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2178">
           <caret line="101" column="14" selection-start-line="101" selection-start-column="12" selection-end-line="101" selection-end-column="14" />
-          <folding>
-            <element signature="e#176#207#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -465,7 +482,7 @@
           <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548281144844" expanded="true" signature="1279:1361" ph="..." />
+            <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
           </folding>
         </state>
       </provider>
@@ -474,9 +491,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="880">
           <caret line="42" column="10" lean-forward="true" selection-start-line="42" selection-start-column="10" selection-end-line="42" selection-end-column="10" />
-          <folding>
-            <element signature="e#176#207#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -500,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
           <caret line="30" column="20" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
-          <folding>
-            <element signature="e#356#370#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -510,16 +521,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="814">
           <caret line="71" column="15" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="15" />
-          <folding>
-            <element signature="e#176#207#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/tom178.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2489">
-          <caret line="306" column="9" lean-forward="true" selection-start-line="306" selection-start-column="9" selection-end-line="306" selection-end-column="9" />
+        <state relative-caret-position="264">
+          <caret line="293" selection-start-line="293" selection-end-line="293" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -528,11 +536,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HJ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="371">
-          <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
+        <state relative-caret-position="748">
+          <caret line="124" column="12" lean-forward="true" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548281144844" expanded="true" signature="1279:1361" ph="..." />
+            <marker date="1548283993425" expanded="true" signature="1249:1331" ph="..." />
           </folding>
         </state>
       </provider>
