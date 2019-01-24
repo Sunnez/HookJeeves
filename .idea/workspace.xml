@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41776f9a-637c-44c1-84f4-caa5846764b6" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/HJAlg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/HJ.py" beforeDir="false" afterPath="$PROJECT_DIR$/HJ.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tom178.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unused/hj_new.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/unused/hook.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/wxglade_out.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -23,18 +17,17 @@
     <SUITE FILE_PATH="coverage/hookepy$hj_new.coverage" NAME="hj_new Coverage Results" MODIFIED="1548030311365" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hookepy$tom178.coverage" NAME="tom178 Coverage Results" MODIFIED="1548259484796" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/hookepy$main.coverage" NAME="main Coverage Results" MODIFIED="1548281144894" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/HookJeeves$main.coverage" NAME="main Coverage Results" MODIFIED="1548337872115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/HookJeeves$main.coverage" NAME="main Coverage Results" MODIFIED="1548339098737" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file leaf-file-name="HJ.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HJ.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="481">
-              <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+            <state relative-caret-position="418">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
-                <element signature="e#0#24#0" expanded="true" />
-                <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+                <element signature="e#0#23#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,6 +69,7 @@
       <find>best_nearby</find>
       <find>xbefore</find>
       <find>step</find>
+      <find>plt.show</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -133,7 +127,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="IntelliLang.Configuration" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -280,6 +274,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -322,8 +317,7 @@
         <state relative-caret-position="2728">
           <caret line="124" column="12" lean-forward="true" selection-start-line="124" selection-start-column="12" selection-end-line="124" selection-end-column="12" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -343,8 +337,7 @@
         <state relative-caret-position="1298">
           <caret line="59" column="21" lean-forward="true" selection-start-line="59" selection-start-column="21" selection-end-line="59" selection-end-column="21" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -378,8 +371,7 @@
         <state relative-caret-position="1342">
           <caret line="61" lean-forward="true" selection-start-line="61" selection-end-line="61" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -396,8 +388,7 @@
         <state relative-caret-position="1540">
           <caret line="70" column="20" lean-forward="true" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -448,8 +439,7 @@
         <state relative-caret-position="1650">
           <caret line="77" column="23" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -466,8 +456,7 @@
         <state relative-caret-position="1694">
           <caret line="77" column="23" lean-forward="true" selection-start-line="77" selection-start-column="23" selection-end-line="77" selection-end-column="23" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -511,8 +500,7 @@
         <state relative-caret-position="1584">
           <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -564,13 +552,15 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plot.png">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/HJ.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="481">
-          <caret line="95" column="22" selection-start-line="95" selection-start-column="22" selection-end-line="95" selection-end-column="22" />
+        <state relative-caret-position="418">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
           <folding>
-            <element signature="e#0#24#0" expanded="true" />
-            <marker date="1548337872024" expanded="true" signature="192:309" ph="..." />
+            <element signature="e#0#23#0" expanded="true" />
           </folding>
         </state>
       </provider>
