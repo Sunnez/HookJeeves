@@ -1,13 +1,17 @@
 from tkinter import *
+
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
+from matplotlib.figure import Figure
+
 import PlotGraph as pg
-import functionValue
+import Function
 from decimal import Decimal
 from numpy import round
-from HJAlg import hooke
+from HookJeeves import hooke
+import numpy as np
 
 
 class Window(Frame):
-
 
 
     def __init__(self, master=None):
@@ -16,12 +20,49 @@ class Window(Frame):
         self.init_window()
 
 
+    def new_window(self, figure):
+
+        self.window = Toplevel()
+
+        self.window.wm_title("Hook Jeeves Graph")
+
+        canvas = FigureCanvasTkAgg(figure, master=self.window)  # A tk.DrawingArea.
+        canvas.draw()
+        canvas.get_tk_widget().pack(side=TOP, fill=BOTH, expand=1)
+
+        self.window.tkraise()
+
+
+
     #Creation of init_window
     def init_window(self):
         # changing the title of our master widget      
         self.master.title("Hook & Jeeves minimum search by Krakowian J. and Gaciarz M.")
         # allowing the widget to take the full space of the root window
         self.pack(fill=BOTH, expand=1)
+
+        graphOptionsLabel = Label(self, text="Plot options:")
+        graphOptionsLabel.place(x=365,y=60)
+
+        self.checkSteps = IntVar()
+        self.checkSteps.set(0)
+        steps = Checkbutton(self, text="Show steps",variable = self.checkSteps)
+        steps.place(x=350,y=90)
+
+        self.checkStartEnd = IntVar()
+        self.checkStartEnd.set(1)
+        startend = Checkbutton(self, text="Show start and end", variable = self.checkStartEnd)
+        startend.place(x=350,y=120)
+
+        self.checkLines = IntVar()
+        self.checkLines.set(1)
+        lines = Checkbutton(self, text="Show lines", variable = self.checkLines)
+        lines.place(x=350, y=150)
+
+        self.checkNumbers = IntVar()
+        self.checkNumbers.set(0)
+        numbers = Checkbutton(self, text="show numbers",variable = self.checkNumbers)
+        numbers.place(x=350, y=180)
 
 
         functionLabel = Label(self, text="Function")
@@ -165,14 +206,14 @@ class Window(Frame):
         self.minXlabel = minimumXLabel
         self.minYlabel = minimumYLabel
 
+
+
     # # OPTIONS
     # nvars = 2  # wymiar
     # startpt = [6, 7]  # punkt startowy
     # itermax = 1500  # maks liczba iteracji
     # steplength = 0.5  # should be set to a value between 0.0 and 1.0. inaczej rho
     # eps = 1.0E-04  # the criterion for halting the search for a minimum.
-
-
 
 
     def runButtonHandler(self):
@@ -191,6 +232,8 @@ class Window(Frame):
         txtBeta = float(self.txtBeta.get("1.0",'end-1c'))
         txtAlpha = float(self.txtAlpha.get("1.0",'end-1c'))
 
+
+        # get labels so we can fill results
         minXlbl = self.minXlabel
         minYlbl = self.minYlabel
         iterlbl = self.IterLabel
@@ -202,10 +245,11 @@ class Window(Frame):
 
         #hooke(nvars, startpt, rho, eps, itermax, f):
         # Launch hooke
-        it, endpt, points = hooke(2, [txtX, txtY], txtTau, txtEps, 1000, functionValue.functionValue)
+        it, endpt, points = hooke(2, [txtX, txtY], txtTau, txtEps, 1000, Function.getValue)
 
         # Plot a graph
-        pg.PlotGraph(endpt, points)
+        figure = pg.PlotGraph(endpt, points,self.checkNumbers.get(),
+                              self.checkLines.get(),self.checkSteps.get(),self.checkStartEnd.get())
 
         # Save endpt - found minimum
         endpt_rounded = round(endpt, 2)
@@ -215,6 +259,10 @@ class Window(Frame):
         minXlbl['text'] = (endpt_rounded[0])
         minYlbl['text'] = (endpt_rounded[1])
         iterlbl['text'] = it
+
+        self.new_window(figure)
+
+
 
 root = Tk()
 

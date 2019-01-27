@@ -4,7 +4,7 @@ def cosine(x):
     return math.cos(math.radians(x))
 
 
-def functionValue(x, n):
+def getValue(x, n):
     # value = 100.0 * (x[1] - x[0] * x[0]) ** 2 \                       # Rosenbrock
     #        + (1.0 - x[0]) ** 2
 

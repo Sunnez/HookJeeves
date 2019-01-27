@@ -1,6 +1,10 @@
+from tkinter import BOTTOM, BOTH, TOP
+
 import numpy as np
 import matplotlib.pyplot as plt
 import adjustText as at
+from matplotlib.figure import Figure
+from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 
 # OPTIONS
 # nvars = 2         # wymiar
@@ -9,14 +13,9 @@ import adjustText as at
 # steplength = 0.5  # should be set to a value between 0.0 and 1.0. inaczej rho
 # eps = 1.0E-04     # the criterion for halting the search for a minimum.
 
-showsteps = False
-showStartAndEnd = True
-showLines = True
-showNumbers = False
-OptimizeGraph = False
 
-
-def PlotGraph(endpt, points):
+def PlotGraph(endpt, points, showNumbers, showLines, showSteps, showStartAndEnd):
+    fig = plt.figure()
     plt.title("Hook - Jeeves Method")
     plt.xlabel("X")
     plt.ylabel("Y")
@@ -41,7 +40,7 @@ def PlotGraph(endpt, points):
     if showLines:
         plt.plot(xs, ys)
 
-    if showsteps:
+    if showSteps:
         texts = [plt.text(xs[i], ys[i], 'Step ' + str(i + 1), ha='center', va='center') for i in range(len(xs))]
         at.adjust_text(texts, xs, ys, arrowprops=dict(arrowstyle='->', color='black'))
 
@@ -53,13 +52,8 @@ def PlotGraph(endpt, points):
         at.adjust_text(firstPointText, xs, ys, arrowprops=dict(arrowstyle='-', color='black'))
         at.adjust_text(endPointText, endpt, endpt, arrowprops=dict(arrowstyle='-', color='black'))
 
-    if OptimizeGraph:
-        xmin = min(x for x in xs)
-        xmax = max(x for x in xs)
-        ymin = min(y for y in ys)
-        ymax = max(y for y in ys)
-        plt.axis([xmin, xmax, ymin, ymax])
 
     plt.savefig('plot.png', dpi=200)
+    fig.savefig('plottest.png',dpi=100)
     plt.show()
-    print('')
+    return fig

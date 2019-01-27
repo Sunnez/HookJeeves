@@ -2,7 +2,7 @@ import copy
 
 import matplotlib.pyplot as plt
 import os
-import functionValue
+import Function
 
 
 
