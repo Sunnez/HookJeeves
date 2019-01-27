@@ -1,7 +1,8 @@
+import copy
+
 import matplotlib.pyplot as plt
 import os
-
-fig = plt.figure()
+import functionValue
 
 
 
@@ -47,8 +48,10 @@ def hooke(nvars, startpt, rho, eps, itermax, f):
 
     verbose = True
     points = []
-    newx = startpt.copy()
-    xbefore = startpt.copy()
+    #newx = startpt.copy()
+    newx = copy.deepcopy(startpt)
+    xbefore = copy.deepcopy(startpt)
+    #xbefore = startpt.copy()
 
     delta = np.zeros(nvars)
 
