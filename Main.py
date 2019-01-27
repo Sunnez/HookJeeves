@@ -1,14 +1,11 @@
 from tkinter import *
 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
-from matplotlib.figure import Figure
 
 import PlotGraph as pg
-import Function
 from decimal import Decimal
 from numpy import round
 from HookJeeves import hooke
-import numpy as np
 
 
 class Window(Frame):
@@ -24,7 +21,7 @@ class Window(Frame):
 
         self.window = Toplevel()
 
-        self.window.wm_title("Hook Jeeves Graph")
+        self.window.wm_title("Hook Jeeves plot")
 
         canvas = FigureCanvasTkAgg(figure, master=self.window)  # A tk.DrawingArea.
         canvas.draw()
@@ -70,6 +67,7 @@ class Window(Frame):
 
         functionLabel = Label(self, text="f = ")
         functionLabel.place(x=180,y=10)
+
 
         textFunction = Text(self, height=1, width=35)
         textFunction.place(x=210,y=10)
@@ -215,6 +213,15 @@ class Window(Frame):
     # steplength = 0.5  # should be set to a value between 0.0 and 1.0. inaczej rho
     # eps = 1.0E-04  # the criterion for halting the search for a minimum.
 
+    def getValueFromUser(self, x, n):
+        dict = {'x': x}
+
+        #expr = 'x[0] ** 2 + x[1] ** 2 + (x[0] * x[1]) - x[0] + 4'
+
+        txtFunc = self.txtFnc.get("1.0",'end-1c')
+
+        r = eval(txtFunc, dict)
+        return r
 
     def runButtonHandler(self):
         print('works')
@@ -243,9 +250,9 @@ class Window(Frame):
         print(txtEps, type(txtEps))
         print(txtFunc,type(txtFunc))
 
-        #hooke(nvars, startpt, rho, eps, itermax, f):
+
         # Launch hooke
-        it, endpt, points = hooke(2, [txtX, txtY], txtTau, txtEps, 1000, Function.getValue)
+        it, endpt, points = hooke(2, [txtX, txtY], txtTau, txtEps, 1000, self.getValueFromUser)
 
         # Plot a graph
         figure = pg.PlotGraph(endpt, points,self.checkNumbers.get(),
@@ -260,6 +267,7 @@ class Window(Frame):
         minYlbl['text'] = (endpt_rounded[1])
         iterlbl['text'] = it
 
+        # Display plot in another window
         self.new_window(figure)
 
 

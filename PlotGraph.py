@@ -1,10 +1,6 @@
-from tkinter import BOTTOM, BOTH, TOP
-
 import numpy as np
 import matplotlib.pyplot as plt
 import adjustText as at
-from matplotlib.figure import Figure
-from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg, NavigationToolbar2Tk
 
 # OPTIONS
 # nvars = 2         # wymiar
@@ -54,6 +50,5 @@ def PlotGraph(endpt, points, showNumbers, showLines, showSteps, showStartAndEnd)
 
 
     plt.savefig('plot.png', dpi=200)
-    fig.savefig('plottest.png',dpi=100)
     plt.show()
     return fig

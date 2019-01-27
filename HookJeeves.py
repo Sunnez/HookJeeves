@@ -1,11 +1,4 @@
-import copy
-
-import matplotlib.pyplot as plt
-import os
-import Function
-
-
-
+from copy import deepcopy
 def best_nearby(delta, point, prevbest, nvars, f, funevals):
 
     z = point.copy()
@@ -48,10 +41,8 @@ def hooke(nvars, startpt, rho, eps, itermax, f):
 
     verbose = True
     points = []
-    #newx = startpt.copy()
-    newx = copy.deepcopy(startpt)
-    xbefore = copy.deepcopy(startpt)
-    #xbefore = startpt.copy()
+    newx = deepcopy(startpt)
+    xbefore = deepcopy(startpt)
 
     delta = np.zeros(nvars)
 
@@ -65,6 +56,7 @@ def hooke(nvars, startpt, rho, eps, itermax, f):
     steplength = rho
     iters = 0
     fbefore = f(newx, nvars)
+
     funevals = funevals + 1
     newf = fbefore
 
