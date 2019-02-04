@@ -1,13 +1,12 @@
+import numpy
 from tkinter import *
 
 from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 
 import PlotGraph as pg
 from decimal import Decimal
-from numpy import round
 from HookJeeves import hooke
-
-
+from numpy import round
 class Window(Frame):
 
 
@@ -225,7 +224,7 @@ class Window(Frame):
 
     def runButtonHandler(self):
         print('works')
-
+        changed = False
         # collect values when we click
         txtFunc = self.txtFnc.get("1.0",'end-1c')
         txtX = float(self.txtX.get("1.0",'end-1c'))
@@ -260,13 +259,27 @@ class Window(Frame):
 
         # Save endpt - found minimum
         endpt_rounded = round(endpt, 2)
-        print('Iterations = ', it, ' end pt : ', endpt_rounded)
+        #print('Iterations = ', it, ' end pt : ', endpt_rounded)
 
         # Set the results to labels in GUI
         minXlbl['text'] = (endpt_rounded[0])
         minYlbl['text'] = (endpt_rounded[1])
         iterlbl['text'] = it
 
+
+
+
+
+
+
+
+        if(txtBeta != 1):
+            it = it / txtBeta
+            iterlbl['text'] = round(int(it))
+
+        elif txtAlpha != 1:
+            it = it/ txtAlpha
+            iterlbl['text'] = round(int(it))
         # Display plot in another window
         self.new_window(figure)
 
