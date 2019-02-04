@@ -8,4 +8,5 @@ Combined it with simple tkinter GUI and matplot to draw the search for minimum. 
 sources:
 
 https://people.sc.fsu.edu/~jburkardt/py_src/toms178/toms178.html
+
 https://github.com/Phlya/adjustText/
