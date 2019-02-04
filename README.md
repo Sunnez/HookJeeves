@@ -1,8 +1,6 @@
 # HookJeeves
 Implementation of Hook &amp; Jeeves optimization algorithm from TOMS178 library with tkinter GUI
 
-Link to TOMS178 lib:
-
 
 Combined it with simple tkinter GUI and matplot to draw the search for minimum. Additionally used adjustText to make some prettier graph options
 
